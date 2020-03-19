@@ -183,14 +183,15 @@ int main()
 	srand(unsigned(time(NULL)));
 	BackPack backPack;
 	initBackPack(backPack);
-	//ObjectList objectList = initObjectList();
+	ObjectList objectList = initObjectList();
 	
-	Object* test1 = new Object{ 4.0, 12, 4.0/12 };
+	//List from wikipedia
+	/*Object* test1 = new Object{ 4.0, 12, 4.0/12 };
 	Object* test2 = new Object{ 2.0, 1, 2.0 };
 	Object* test3 = new Object{ 10.0, 4, 2.5 };
 	Object* test4 = new Object{ 1.0, 1, 1.0 };
 	Object* test5 = new Object{ 2.0, 2, 1.0 };
-	ObjectList objectList = { 5, {test1, test2, test3, test4, test5} };
+	ObjectList objectList = { 5, {test1, test2, test3, test4, test5} };*/ //List from wikipedia
 
 	cout << "\n\n";
 	
