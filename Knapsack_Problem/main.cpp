@@ -3,18 +3,11 @@
 //Solution to knapsack problem
 //
 
-#include <ciso646>
-#include <cstddef>
-#include <cstdint>
 
 #include <random>
 #include <time.h>
-#include <cmath>
-#include <fstream>
 #include <iomanip>
 #include <iostream>
-#include <string>
-#include <cstdlib>
 #include "cppitertools/range.hpp"
 #include "gsl/span"
 
