@@ -157,7 +157,6 @@ void packBackPackForMaxProfit(BackPack& backPack, ObjectList& objectList) {
 	unsigned nTimes;
 	for (unsigned i = 0; massRemaining > 0; i++) {
 		nTimes = massRemaining / objectList.content[i]->mass;
-		cout << nTimes << "x " << objectList.content[i]->netProfit << " " << objectList.content[i]->mass << endl;
 		addToBackPack(objectList.content[i], backPack, nTimes);
 		massRemaining -= objectList.content[i]->mass * nTimes;
 	}
@@ -194,8 +193,6 @@ int main()
 
 	packBackPackForMaxProfit(backPack, objectList);
 	
-	cout << "\n\n";
-	printObjectList(objectList);
 	cout << "\n\n";
 
 	cout << endl << "The max profit for this backpack is : " << profitBackPack(backPack) << "$" << endl;
